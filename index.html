@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lejos de la capital</title>
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- <div id="fakeLVbar">
+    <div class="fake1"></div>
+    <div class="fake2"></div>
+  </div> -->
+
+  <div id="lv_caratula">
+    <div class="lv_caratulaWrapper">
+        <div class="lv_caratulaBox">
+            <div class="lv_caratulaItem lv_caratulaImg"></div>
+            <div class="lv_caratulaItem lv_caratulaText">
+                <div class="lv_jumbo">
+                    <h3 class="lv_epigrafe">La Catalunya vaciada</h3>
+                    <h1 class="lv_titular">Lejos de la capital</h1>
+                    <p class="lv_introText">Los pequeños municipios rurales se enfrentan al reto de frenar el proceso de despoblación </p>
+                    <div class="lv_downArrows">
+                        <span class="lv_downArrow"></span>
+                        <span class="lv_downArrow"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+  </div>
+  <div id="lv_extraData">
+
+    <div class="lv_extraDataWrapper">
+        <div class="lv_authorsWrapper">
+            <span class="lv_authorName">
+                <a href="https://www.lavanguardia.com/autores/rosa-maria-bosch.html" target="_blank">
+                    <h5>Rosa M. Bosch</h5>
+
+                </a>
+            </span>
+
+            <div class="lv_xarxes">
+                <a href="http://www.facebook.com/sharer.php?u=https://www.lavanguardia.com" target="_blank" class="btn rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=https://www.lavanguardia.com" target="_blank" class="btn rounded-circle"><i class="fab fa-twitter"></i></a>
+                <a href="whatsapp://send?text=https://www.lavanguardia.com" target="_blank" class="btn rounded-circle"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+
+        <div class="lv_xarxesWrapper">
+            
+        </div>
+    </div>
+
+
+
+        
+        
+
+  </div>
+
+
+
+
+
+  <div id="lv_introPieza">
+    <p class="lv_par">De Maldà, en la comarca del Urgell, a Sarroca de Bellera, en el Pallars Jussà, pueblos pequeños y apartados de las ciudades se enfrentan al reto de revertir procesos de pérdida de población. Los alcaldes exigen una suerte de discriminación positiva hacia estos municipios y, sobre todo, promover políticas encaminadas a incrementar la oferta de primera residencia. El denominador común es el crónico déficit de vivienda lo que hipoteca la llegada de nuevos vecinos y dificulta que los jóvenes que se emancipan puedan seguir viviendo en Cava, Bot, Saldes y en tantos otros destinos de unos pocos centenares de habitantes.
+    </p>
+
+    <p class="lv_par">La serie 'Lejos de la capital' da voz a estas localidades, muchas convertidas en paraíso de las segundas residencias, como Sarroca de Bellera, con 18 núcleos de población y con más del 80% de sus casas habitadas sólo en vacaciones y algunos fines de semana. Entre los inmuebles destinados al mercado turístico y los que llevan décadas  cerrados o están en ruinas, la oferta para quien desee trasladarse a  vivir todo el año a un micropueblo es mínima. Desde Riner, su alcalde y presidente de la Associació de Micropobles de Catalunya, Joan Solà, reclama a la Generalitat que flexibilice las normas urbanísticas para posibilitar la construcción de nuevas viviendas, además de retomar cuanto antes la tramitación del estatuto de municipios rurales. </p>
+
+
+    <div class="lv_separator">
+        <hr>
+    </div>
+
+  </div>
+
+
+
+  <div id="lv_widget">
+        <div class="lv_devWrapper">
+
+        <div id="lv_title">
+           
+            <h3>Consulta los pueblos de la serie 'Lejos de la capital' </h3>
+            <p>Haz click en el carrusel o en el mapa para ampliar</p>
+        </div>
+
+
+        <div id="lv_carousel" class="lv_carousel-container">
+            <div id="lv_carousel_items" class="lv_carousel-items"></div>
+            
+                <div class="lv_arrow lv_arrow-left" onclick="scrollCarousel(-1)"> <span>&#8249;</span></div>
+                
+                <div class="lv_arrow lv_arrow-right" onclick="scrollCarousel(1)"> <span>&#8250;</span></div>
+
+            
+        </div>
+
+        <div class="lv_mapWrapper">
+            <div class="lv_inicio"> 
+               <span>Inicio</span> 
+            </div> 
+            <div id="lv_map" class="lv_map-container"></div>
+        </div>
+        
+
+    </div>
+    
+
+    <div id="lv_modal" class="lv_modal" style="display:none;">
+        <div class="lv_modal-content">
+            <a id="lv_modal-link" href="" target="_blank">
+                <div class="lv_modalWrapper">
+                    <img id="lv_modal-img" src="" alt="" class="lv_modal-image">
+                    <div class="lv_modal-info">
+                        <h4 class="lv_modalInfoTitle"></h4>
+                        <p class="lv_modalInfoDetail"></p>
+                    </div>
+                
+
+                </div>
+            </a>
+            <button class="lv_close" onclick="hideModal()">x</button>
+        </div>
+        
+    </div>
+  </div>
+
+
+
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

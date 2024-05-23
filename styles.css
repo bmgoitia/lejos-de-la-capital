@@ -1,0 +1,702 @@
+
+:root {
+    --lv_blue: #001c4c;
+}
+
+
+/* TIMES HEADLINE */
+
+
+@font-face{
+    font-family: 'HLight';
+    src: url('./fonts/TiemposHeadline-Light.woff2') format('woff');
+}
+
+@font-face{
+  font-family: 'HRegular';
+  src: url('./fonts/TiemposHeadline-Regular.woff2') format('woff');
+}
+
+
+@font-face{
+  font-family: 'HMedium';
+  src: url('./fonts/TiemposHeadline-Medium.woff2') format('woff');
+}
+
+
+@font-face{
+  font-family: 'HSemibold';
+  src: url('./fonts/TiemposHeadline-Semibold.woff2') format('woff');
+}
+
+
+@font-face{
+  font-family: 'HBold';
+  src: url('./fonts/TiemposHeadline-Bold.woff2') format('woff');
+}
+
+
+@font-face{
+  font-family: 'HBlack';
+  src: url('./fonts/TiemposHeadline-Black.woff2') format('woff');
+}
+
+
+
+
+
+
+/* TIMES TEXT */
+
+@font-face{
+  font-family: 'TRegular';
+  src: url('./fonts/TiemposText-Regular.woff2') format('woff');
+}
+
+/* @font-face{
+    font-family: 'TRegularr';
+    src: url('./fonts/TiemposText-Regularr.woff') format('woff');
+  } */
+
+
+@font-face{
+  font-family: 'TRegularItalic';
+  src: url('./fonts/TiemposTextApp-RegularItalic.woff') format('woff');
+}
+
+
+@font-face{
+  font-family: 'TMedium';
+  src: url('./fonts/TiemposText-Medium.woff2') format('woff');
+}
+
+
+@font-face{
+  font-family: 'TSemibold';
+  src: url('./fonts/TiemposText-Semibold.woff2') format('woff');
+}
+
+
+@font-face{
+  font-family: 'TBold';
+  src: url('./fonts/TiemposText-Bold.woff2') format('woff');
+}
+
+
+/* font-family: 'TRegular', serif; */
+
+  
+
+  
+  
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+h1,h2,h3, h4, h5, h6, p{
+    margin: 0;
+    
+}
+
+
+
+
+#fakeLVbar{
+    width: 100vw;
+    
+}
+
+.fake1{
+    height: 37px;
+}
+
+
+.fake2{
+    height: 40px;
+    background-color: #001c4c;
+}
+
+
+
+/* CARÁTULA */
+
+#lv_caratula{
+
+}
+
+
+.lv_caratulaWrapper{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.lv_caratulaBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lv_caratulaItem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.lv_caratulaImg{
+    z-index: 1;
+    background-image: url(./img/lejos_mov3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.lv_caratulaText{
+    z-index: 2;
+    align-items: flex-end;
+    background: linear-gradient(#0000, #00000063, #000000);
+    
+}
+
+.lv_jumbo{
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.lv_epigrafe{
+    position: relative;
+    color: #fde636;
+    text-transform: uppercase;
+    font-family: 'HMedium', serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+
+.lv_epigrafe:after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100px;
+    height: 1px;
+    background: #fde636;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.lv_titular{
+    color: #fff;
+    padding: 20px;
+    font-size: 44px;
+    font-family: 'HMedium', serif;
+}
+
+.lv_introText{
+    color: #fff;
+    font-family: 'HLight', serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.lv_downArrows{
+
+}
+
+
+.lv_downArrow{
+    display: block;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-top: -10px;
+    opacity: .7;
+}
+
+
+
+
+
+
+
+
+
+/* AUTOR + XARXES */
+
+#lv_extraData{
+
+}
+
+.lv_extraDataWrapper{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lv_authorName{
+    text-align: center;
+}
+
+.lv_authorName a{
+    text-decoration: none;
+    
+}
+
+.lv_authorName h5{
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'HMedium', serif;
+    font-size: 16px;
+
+}
+
+.lv_xarxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.lv_xarxes .btn{
+    width: 40px;
+    margin-left: 6px;
+    color: #fff;
+    background-color: #bcbcbc;
+    border-color: #bcbcbc;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    border-radius: 50%
+
+}
+
+
+
+
+
+
+/* INTRO PIEZA */
+
+#lv_introPieza{
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.lv_par{
+    font-family: 'TRegular', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0 auto 20px auto;
+    max-width: 650px;
+    color: #2e2e2e;
+    letter-spacing: -.1px;
+    word-wrap: break-word
+}
+
+.lv_separator{
+    margin: 70px 0;
+}
+
+
+.lv_separator hr{
+    display: block;
+    max-width: 650px;
+    height: 1px;
+    background-color: #cccbcb;
+}
+
+
+
+
+
+/* WIDGET */
+
+#lv_widget{
+
+    margin-bottom: 140px;
+
+}
+
+
+
+.lv_devWrapper{
+    display: flex;
+    flex-direction: column;
+    height:75vh;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+/* TITLE */
+
+#lv_title{
+    margin: 0 auto;
+    padding: 15px 10%;
+    text-align: center;
+
+}
+
+#lv_title h3{
+    font-family: 'HMedium', serif;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+#lv_title p{
+    font-size: .8rem;
+    font-family: 'TRegular', serif;
+    font-style: italic;
+}
+
+
+
+/* CAROUSEL  */
+.lv_carousel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    z-index: 1001;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.lv_carousel-items {
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.lv_carousel-items::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.lv_carousel-itemWrapper{
+    padding: 5px;
+
+}
+
+
+.lv_carousel-item {
+    flex: 0 0 22%;
+    max-width: 115px;
+    margin: 10px;
+    border: 2px solid #d7d7d7;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px; 
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.lv_carousel-item img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.lv_carousel-caption {
+    
+}
+
+
+.lv_carousel-caption p{
+    font-family: 'TRegular', serif;
+    text-align: center;
+    font-size: .63rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--lv_blue);
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+/* Carousel signs */
+
+
+
+
+.lv_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20%);
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    z-index: 1001;
+    font-size: 36px;
+    color: #ffffff; 
+    height: 81px;
+    width: 20px;
+    border-radius: 3px;
+}
+
+.lv_arrow-left {
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%);
+}
+
+.lv_arrow-right {
+    position: absolute; 
+    top: 50%; 
+    right: 0; 
+    transform: translateY(-50%);
+}
+
+.lv_arrow span{
+   
+}
+
+
+
+
+
+/*  MAP */
+
+.lv_mapWrapper{
+    position: relative;
+    flex-grow: 1;
+}
+
+
+.lv_map-container {
+    width: 100%;
+    height: 100%;
+}
+
+.lv_inicio{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    z-index: 10002;
+    cursor:pointer;
+}
+
+.lv_inicio span{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: #fff;
+    text-transform: uppercase;
+    font-family: 'HMedium', serif;
+    font-size: .9rem;
+    letter-spacing: .7px;
+}
+
+
+
+
+/* MODAL */
+
+
+
+.lv_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  z-index: 1000;
+  visibility: hidden;
+  max-height: 90vh;
+  width: 85vw;
+  max-width: 500px;;
+}
+
+.lv_modal.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.lv_modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+}
+
+.lv_modal-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--lv_blue);
+
+}
+
+.lv_modalWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lv_modal-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.lv_modal-info {
+    flex-grow: 1;
+    
+}
+
+.lv_modalInfoTitle{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: 'HMedium', serif;
+}
+
+.lv_modalInfoDetail{
+    font-size: 1rem;
+    font-family: 'TRegular', serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.lv_modalInfoDetail span{
+  display: inline-block;
+  margin-left: 4px;
+  transform: rotate(30deg);
+}
+
+
+
+
+.lv_close {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 650px) {
+    .lv_caratulaImg{
+        
+        background-image: url(./img/img-portada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+
+@media (min-width: 767px) {
+    .lv_caratulaWrapper {
+        height: calc(100vh - 50px) !important;
+    }
+
+    .lv_caratulaBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .lv_caratulaItem{
+        position:initial;
+    
+    }
+    
+    
+    
+    .lv_caratulaText{
+        background: #000;
+        align-items: center;
+        
+    }
+
+    .lv_titular{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .lv_introText{
+        margin-bottom: 40px;
+    }
+
+
+
+}
+
+
+
+
+
+@media (min-width: 1100px) {
+    .lv_introText{
+        padding: 10px 10%;
+    }
+}
+
